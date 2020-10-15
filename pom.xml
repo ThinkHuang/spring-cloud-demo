@@ -39,7 +39,5 @@
     <module>spring-cloud-server</module>
     <module>spring-cloud-consul</module>
     <module>spring-cloud-eureka</module>
-    <module>spring-cloud-server-peer1</module>
-    <module>spring-cloud-server-peer2</module>
   </modules>
 </project>
