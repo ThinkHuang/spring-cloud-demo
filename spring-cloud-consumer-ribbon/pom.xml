@@ -22,12 +22,6 @@
 	        <artifactId>spring-cloud-starter-eureka</artifactId>
     	</dependency>
 	    
-	    <!-- 添加监控依赖 -->
-	    <dependency>
-	        <groupId>org.springframework.boot</groupId>
-	        <artifactId>spring-boot-starter-actuator</artifactId>
-	    </dependency>
-	    
 	    <!-- 添加ribbon依赖 -->
 	    <dependency>
 	        <groupId>org.springframework.cloud</groupId>
