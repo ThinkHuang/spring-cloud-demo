@@ -1,21 +1,30 @@
 package com.consumer.ribbon.service;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-
+@Service
 public class ConsumerService
 {
+    private final static Logger logger = LoggerFactory.getLogger(ConsumerService.class);
+
     @Autowired
     RestTemplate restTemplate;
 
-    @HystrixCommand(fallbackMethod = "fallback")
+    @HystrixCommand(fallbackMethod = "fallback", commandKey = "helloKey")
     public String consumer() {
-        return restTemplate.getForObject("http://eureka-client/dc", String.class);
+        long start = System.currentTimeMillis();
+        String result = restTemplate.getForEntity("http://EUREKA-CLIENT/hello", String.class).getBody();
+        long end = System.currentTimeMillis();
+        logger.info("Spend Time: {}" , end - start);
+        return result;
     }
 
     public String fallback() {
-        return "fallback";
+        return "error";
     }
 }
