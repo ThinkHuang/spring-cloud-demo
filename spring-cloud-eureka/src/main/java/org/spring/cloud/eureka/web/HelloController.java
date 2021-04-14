@@ -30,4 +30,10 @@ public class HelloController {
         logger.info("/hello, host:" + instance.getHost() + ", service_id:" + instance.getServiceId());
         return "Hello World";
     }
+
+    @GetMapping("/users")
+    public String users() throws InterruptedException
+    {
+        return "this is new User";
+    }
 }

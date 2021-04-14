@@ -1,6 +1,7 @@
 package com.consumer.ribbon.service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.cache.annotation.CacheResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,8 @@ public class ConsumerService
     @Autowired
     RestTemplate restTemplate;
 
-    @HystrixCommand(fallbackMethod = "fallback", commandKey = "helloKey")
+    @CacheResult
+    @HystrixCommand(fallbackMethod = "fallback")
     public String consumer() {
         long start = System.currentTimeMillis();
         String result = restTemplate.getForEntity("http://EUREKA-CLIENT/hello", String.class).getBody();
