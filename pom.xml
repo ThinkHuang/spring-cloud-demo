@@ -9,9 +9,13 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>1.5.7.RELEASE</version>
+    <version>2.0.3.RELEASE</version>
     <relativePath/>
   </parent>
+
+  <properties>
+    <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+  </properties>
   
   <dependencies>
     <dependency>
@@ -45,5 +49,20 @@
     <module>spring-cloud-server</module>
     <module>spring-cloud-consul</module>
     <module>spring-cloud-eureka</module>
+    <module>spring-cloud-server-sleuth</module>
+    <module>spring-cloud-client-sleuth-trace-a</module>
+    <module>spring-cloud-client-sleuth-trace-b</module>
   </modules>
+
+  <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
