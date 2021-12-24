@@ -13,3 +13,4 @@ mvnw*
 *.iml
 /.mvn/*
 /spring-cloud-client-sleuth-trace-a/.mvn/wrapper/MavenWrapperDownloader.java
+/.project
