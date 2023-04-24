@@ -9,7 +9,7 @@
     </parent>
 	<groupId>com.example</groupId>
 	<artifactId>spring-cloud-consumer-ribbon</artifactId>
-	<name>sccr</name>
+	<name>spring-cloud-consumer-ribbon</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

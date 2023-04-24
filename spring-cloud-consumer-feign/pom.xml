@@ -9,7 +9,7 @@
     </parent>
 	<groupId>com.example</groupId>
 	<artifactId>spring-cloud-consumer-feign</artifactId>
-	<name>sccf</name>
+	<name>spring-cloud-consumer-feign</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

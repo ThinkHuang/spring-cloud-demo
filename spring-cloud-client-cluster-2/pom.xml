@@ -10,7 +10,7 @@
     </parent>
 	<groupId>com.example</groupId>
 	<artifactId>spring-cloud-client-cluster-2</artifactId>
-	<name>sccc2</name>
+	<name>spring-cloud-client-cluster-2</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

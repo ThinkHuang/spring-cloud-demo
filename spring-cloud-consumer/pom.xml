@@ -9,7 +9,7 @@
     </parent>
 	<groupId>com.example</groupId>
 	<artifactId>spring-cloud-consumer</artifactId>
-	<name>sccs</name>
+	<name>spring-cloud-consumer</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
