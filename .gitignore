@@ -14,3 +14,7 @@ mvnw*
 /.mvn/*
 /spring-cloud-client-sleuth-trace-a/.mvn/wrapper/MavenWrapperDownloader.java
 /.project
+/spring-cloud-web/.gitignore
+/spring-cloud-web/.mvn/wrapper/maven-wrapper.jar
+/spring-cloud-web/.mvn/wrapper/maven-wrapper.jar
+/spring-cloud-web/.mvn/wrapper/maven-wrapper.properties
