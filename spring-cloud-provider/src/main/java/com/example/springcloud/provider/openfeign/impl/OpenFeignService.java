@@ -1,4 +1,4 @@
-package com.example.springcloud.provider;
+package com.example.springcloud.provider.openfeign.impl;
 
 import com.example.springcloud.client.openfeign.service.OpenFeignServiceApi;
 import com.example.springcloudcommon.response.Result;

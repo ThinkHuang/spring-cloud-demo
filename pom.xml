@@ -17,27 +17,9 @@
     <spring-cloud.version>Hoxton.SR9</spring-cloud.version>
   </properties>
   
-  <dependencies>
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-web</artifactId>
-  	</dependency>
-      <!-- 添加 actuator健康检查 -->
-      <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator -->
-      <dependency>
-          <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-starter-actuator</artifactId>
-      </dependency>
-  	<dependency>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-test</artifactId>
-		<scope>test</scope>
-	</dependency>
-  </dependencies>
-  
   <modules>
     <module>spring-cloud-eureka-server</module>
-    <module>spring-cloud-consumer</module>
+    <module>spring-cloud-service</module>
     <module>spring-cloud-common</module>
     <module>spring-cloud-eureka-server</module>
     <module>spring-cloud-gateway</module>

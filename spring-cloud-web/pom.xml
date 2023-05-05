@@ -24,7 +24,7 @@
 
         <dependency>
             <groupId>com.example</groupId>
-            <artifactId>spring-cloud-consumer</artifactId>
+            <artifactId>spring-cloud-service</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 

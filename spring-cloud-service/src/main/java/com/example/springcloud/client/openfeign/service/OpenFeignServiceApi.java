@@ -1,5 +1,6 @@
 package com.example.springcloud.client.openfeign.service;
 
+import com.example.springcloud.client.openfeign.constants.NameServer;
 import com.example.springcloudcommon.response.Result;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
@@ -13,7 +14,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @Version: v1.0
  */
 @Component
-@FeignClient(value="SPRINGCLOUDOPENFEIGN")
+@FeignClient(value= NameServer.spring_cloud_service_name)
 public interface OpenFeignServiceApi {
 
     @GetMapping("/test")
