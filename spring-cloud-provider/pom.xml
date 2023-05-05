@@ -40,7 +40,7 @@
 
 		<dependency>
 			<groupId>com.example</groupId>
-			<artifactId>spring-cloud-service</artifactId>
+			<artifactId>spring-cloud-consumer</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>

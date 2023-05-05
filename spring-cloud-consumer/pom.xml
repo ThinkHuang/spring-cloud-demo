@@ -8,7 +8,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>spring-cloud-service</artifactId>
+    <artifactId>spring-cloud-consumer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-cloud-client-openfeign</name>
     <description>spring-cloud-client-openfeign</description>

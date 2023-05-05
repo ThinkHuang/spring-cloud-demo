@@ -37,7 +37,7 @@
   
   <modules>
     <module>spring-cloud-eureka-server</module>
-    <module>spring-cloud-service</module>
+    <module>spring-cloud-consumer</module>
     <module>spring-cloud-common</module>
     <module>spring-cloud-eureka-server</module>
     <module>spring-cloud-gateway</module>
