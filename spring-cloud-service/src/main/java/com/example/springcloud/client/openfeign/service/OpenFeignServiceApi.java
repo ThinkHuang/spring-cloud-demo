@@ -18,9 +18,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 public interface OpenFeignServiceApi {
 
     @GetMapping("/test")
-    public Result<String> test();
+    Result<String> test();
 
 
     @GetMapping("/timeout")
-    public Result<String> timeout();
+    Result<String> timeout();
 }

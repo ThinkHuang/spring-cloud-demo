@@ -9,5 +9,5 @@ package com.example.springcloud.client.openfeign.constants;
  */
 public interface NameServer {
 
-    String spring_cloud_service_name = "spring_cloud_provider";
+    String spring_cloud_service_name = "spring-cloud-provider";
 }

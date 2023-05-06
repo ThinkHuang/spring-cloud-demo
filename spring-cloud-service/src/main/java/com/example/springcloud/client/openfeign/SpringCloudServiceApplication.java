@@ -1,15 +1,17 @@
-package com.example.springcloud.provider;
+package com.example.springcloud.client.openfeign;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class SpringCloudProviderApplication {
+@EnableFeignClients
+public class SpringCloudServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringCloudProviderApplication.class, args);
+		SpringApplication.run(SpringCloudServiceApplication.class, args);
 	}
 
 }
