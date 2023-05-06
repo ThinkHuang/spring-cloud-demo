@@ -1,0 +1,26 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          # 是否从注册中心读取服务
+          enabled: true
+      routes:
+        # 服务的ID，唯一即可一般与微服务的service name一致
+        - id: spring-cloud-service
+          # lb表示负载均衡
+          uri: lb://cloud-order-service
+          predicates:
+            # 路径匹配,所有service的请求都转发到spring-cloud-service
+            - Path=/service/**
+            # 日期类断言
+            - After=2020-12-11T10:58:41.659+08:00[Asia/Shanghai]
+            - Before=2020-06-20T22:46:41.659+08:00[Asia/Shanghai]
+            - Between=2020-06-20T22:46:41.659+08:00[Asia/Shanghai]
+            # 参数校验，后跟正则表达式
+            - Cookie=username,^\w+$
+            - Header=username,^\w+$
+            - Query=username, \d+
+            - Query=password, \d+
+            # 请求方式校验
+            - Method=GET
